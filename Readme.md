@@ -11,7 +11,9 @@ Automated segmentation in Python for dark-field nanoparticle images.
 It is recommended to run this software inside a [Python](https://docs.python.org/3/library/venv.html) or [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#) environment.
 
 ## Default Behavior
-The code saves a test image in the current working directory.
+The code creates and analyzes a synthetic image.  The following figure is saved into the current working directory. The list of boxes can be returned from the _run_arr_ function if desired.
+
+![GitHub_Example](https://github.com/user-attachments/assets/e4b047d3-8767-4d1a-84e2-99c2f8039ba3)
 
 ## Citation
 If using this work, please cite:
