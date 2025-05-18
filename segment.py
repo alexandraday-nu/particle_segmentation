@@ -191,9 +191,9 @@ def run_arr(arr, comps):
 
 def main():
     #set up test case
-    center_x = 64 # CHANGE BACK
-    center_y = 64 # CHANGE BACK
-    x, y = np.mgrid[0:128, 0:128] # CHANGE BACK
+    center_x = 64 
+    center_y = 64 
+    x, y = np.mgrid[0:128, 0:128] 
     c_arr = 200+((x - center_x) ** 2 + (y - center_y) ** 2)
     test_arr = (1/c_arr)*100
     test_arr[test_arr < (np.max(test_arr)*0.4)] = 0
