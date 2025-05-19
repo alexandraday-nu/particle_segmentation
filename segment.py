@@ -190,16 +190,12 @@ def run_arr(arr, comps):
     return
 
 def main():
-    #set up test case
-    center_x = 64 
-    center_y = 64 
-    x, y = np.mgrid[0:128, 0:128] 
-    c_arr = 200+((x - center_x) ** 2 + (y - center_y) ** 2)
-    test_arr = (1/c_arr)*100
-    test_arr[test_arr < (np.max(test_arr)*0.4)] = 0
-    test_arr[test_arr > (np.max(test_arr)*0.4)] = 1
-    kernel = np.ones((5,5),np.float32)
-    test_arr = cv.filter2D(test_arr,-1,kernel)
+    x, y = np.mgrid[0:128, 0:128]
+    #designed to mimic experimental images
+    c_arr = (-(x-64)**2 - (y-64)**2)+150
+    test = np.where(c_arr>0, c_arr, 0).astype('uint8')
+    kernel = np.ones((5,5),np.float32)/25
+    test_arr = cv.filter2D(test,-1,kernel).astype('uint8')
     #run code 
     run_arr(test_arr, comps = 1)
 
