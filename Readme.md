@@ -14,12 +14,12 @@ It is recommended to run this software inside a [Python](https://docs.python.org
 The code creates and analyzes a synthetic image.  The following figure is saved into the current working directory. The list of boxes can be returned from the _run_arr_ function if desired.
 ![new_synth_upload](https://github.com/user-attachments/assets/402487b0-94a4-4c67-8218-cff9acf2cdf3)
 
-## Questions
-Please contact Ankit Agrawal at ankit-agrawal@northwestern.edu and Alexandra Day at alexandraday2025@u.northwestern.edu.
+## Contact
+Ankit Agrawal <ankit-agrawal@northwestern.edu> and Alexandra Day <alexandraday2025@u.northwestern.edu>
 
 ## Citation
 If using this work, please cite:
-Day, Alexandra L., Carolin B. Wahl, Roberto dos Reis, Wei-keng Liao, Youjia Li, Muhammed Nur Talha Kilic, Chad A. Mirkin, Vinayak P. Dravid, Alok Choudhary, and Ankit Agrawal. “Automated Image Segmentation for Accelerated Nanoparticle Characterization.” Scientific Reports 15, no. 1 (May 17, 2025): 17180. https://doi.org/10.1038/s41598-025-01337-z.
+Alexandra L. Day, Carolin B. Wahl, Roberto dos Reis, Wei-keng Liao, Youjia Li, Muhammed Nur Talha Kilic, Chad A. Mirkin, Vinayak P. Dravid, Alok Choudhary, and Ankit Agrawal. “Automated Image Segmentation for Accelerated Nanoparticle Characterization.” Scientific Reports 15, no. 1 (May 17, 2025): 17180. https://doi.org/10.1038/s41598-025-01337-z.
 
 ## Patent
 The work in this repository is covered under U.S. Patent Application #63/665,529.
