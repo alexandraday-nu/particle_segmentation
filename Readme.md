@@ -22,7 +22,7 @@ If using this work, please cite:
 Alexandra L. Day, Carolin B. Wahl, Roberto dos Reis, Wei-keng Liao, Youjia Li, Muhammed Nur Talha Kilic, Chad A. Mirkin, Vinayak P. Dravid, Alok Choudhary, and Ankit Agrawal. “Automated Image Segmentation for Accelerated Nanoparticle Characterization.” Scientific Reports 15, no. 1 (May 17, 2025): 17180. https://doi.org/10.1038/s41598-025-01337-z.
 
 ## Patent
-The work in this repository is covered under U.S. Patent Application #63/665,529.
+The work in this repository is covered under U.S. Patent Application #19/207,977.
 
 ## Copyright Information
 Copyright (C) 2025, Northwestern University.  See copyright license below.
