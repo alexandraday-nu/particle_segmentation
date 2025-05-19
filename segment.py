@@ -93,10 +93,10 @@ def modify_region(array, row, col, box_size):
 def find_boundaries(region):
     dim1,dim2 = np.nonzero(region)
     coords = np.stack((dim2, dim1), axis=-1)    
-    min_x = np.min(coords[:,0]) #min x
-    max_x = np.max(coords[:,0]) #max x
-    min_y = np.min(coords[:,1]) #min y
-    max_y = np.max(coords[:,1]) #max y
+    min_x = np.min(coords[:,0])
+    max_x = np.max(coords[:,0])
+    min_y = np.min(coords[:,1])
+    max_y = np.max(coords[:,1])
     return min_x, max_x, min_y, max_y
 
 def alg(arr):    
@@ -165,7 +165,7 @@ def make_plots(arr, boxes, ret, crop, min_x, max_x, min_y, max_y):
     axes[2].set_title('Detail') 
 
     plt.tight_layout()
-    nowstr = datetime.now().strftime('%H-%M-%S_%Y-%m-%d') #nb odd format for easier searching
+    nowstr = datetime.now().strftime('%H-%M-%S_%Y-%m-%d') 
     savename = savedir + '/' + nowstr + '.png'
     print("Saving to", (savedir + '/' + nowstr + '.png'))
     plt.savefig(savename)
