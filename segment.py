@@ -108,10 +108,10 @@ def alg(arr):
     q.queue = queue.deque(coords)
     while not q.empty():
         elem = q.get()
-        if not arr[elem[1], elem[0]] == 0: # row, col - check that there's still a one at this location
-            box_size = make_box(arr, elem[0], elem[1], max_box_size) # col, row
-            boxes.append([elem[0], elem[1], box_size]) # col, row
-            arr = modify_region(arr, elem[1], elem[0], box_size) # row, col
+        if not arr[elem[1], elem[0]] == 0: 
+            box_size = make_box(arr, elem[0], elem[1], max_box_size) 
+            boxes.append([elem[0], elem[1], box_size]) 
+            arr = modify_region(arr, elem[1], elem[0], box_size) 
     return boxes
 
 def process(arr, comps, bins):
@@ -177,7 +177,7 @@ def run_arr(arr, comps):
     appended_boxes = []
     for i in range(K):
         this_region = (segmented==i)*1
-        if not ((this_region)[0][0]==1): # this step allows us to skip the background region
+        if not ((this_region)[0][0]==1): # skip the background region
             reg_boxes = alg(this_region)
             appended_boxes.append(reg_boxes)
         boxes = np.array([x for xs in appended_boxes for x in xs])
