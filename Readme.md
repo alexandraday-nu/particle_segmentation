@@ -12,8 +12,8 @@ It is recommended to run this software inside a [Python](https://docs.python.org
 
 ## Default Behavior
 The code creates and analyzes a synthetic image.  The following figure is saved into the current working directory. The list of boxes can be returned from the _run_arr_ function if desired.
+![new_synth_upload](https://github.com/user-attachments/assets/402487b0-94a4-4c67-8218-cff9acf2cdf3)
 
-![GitHub_Example](https://github.com/user-attachments/assets/e4b047d3-8767-4d1a-84e2-99c2f8039ba3)
 
 ## Citation
 If using this work, please cite:
